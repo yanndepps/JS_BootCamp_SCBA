@@ -1,0 +1,31 @@
+{
+  "name": "js_bootcamp_scba",
+  "version": "1.0.0",
+  "description": "* a javascript bootcamp by scrimba",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\"",
+    "lint": "eslint --ignore-path ./.gitignore --fix \"./**/*.{js,ts}\"",
+    "lint:check": "eslint --ignore-path ./.gitignore --quiet \"./**/*.{js,ts}\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanndepps/JS_BootCamp_SCBA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanndepps/JS_BootCamp_SCBA/issues"
+  },
+  "homepage": "https://github.com/yanndepps/JS_BootCamp_SCBA#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.2.1",
+    "prettier": "^2.0.5"
+  }
+}
