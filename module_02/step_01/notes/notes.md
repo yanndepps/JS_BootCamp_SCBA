@@ -36,3 +36,25 @@
   
   - N/B : in switch statements, if none of the cases match, the default case runs
 
+
+### types and how they can be changed
+
+- there are two ways to convert data from one type to another in JS :
+  1. **explicit** type conversion : where we tell JS that we want to change 
+     the data types 
+  2. **implicit** ( automatic ) type conversion ( coercion ) : in which JS changes 
+     data types automatically
+     ```
+     console.log("10" + 20);
+     ```
+     
+- all data in JS can be divided in two categories :
+  1. **truthy**
+  2. **falsy**
+
+- **falsy** values are _false_, _0_, _''_, _null_, _undefined_, _NaN_
+- all other values are **truthy**
+- when working with **falsy** values :
+  1. avoid direct comparisons in conditionals
+  2. use triple equals ( strict equals operator ) to prevent type conversion
+  3. convert to real Boolean values where needed
