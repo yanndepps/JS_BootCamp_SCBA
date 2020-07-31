@@ -42,3 +42,64 @@
 - using **const**, which is also _blocked scoped_, we can create variables
   which can not be reassigned
 - temporal dead zone : space between declaration and accessibilty
+
+### const
+
+- **const** has restrictions which make the code more readable :
+  1. must be initialized with a value 
+  2. can't be reassigned after declaration
+  
+- declaring a variable with the keyword **const** makes it easier to
+  understand the code
+- as we know that **const** doesn't allow the variable to be reassigned,
+  we can be sure of its value and usage throughout the entire code
+  
+### why block scoping matters
+
+- as we know that **block** in JS can be defined by a set of opening and
+  closing curly brackets
+- therefore, using variables with blocking scope helps a lot in keeping 
+  the global scope less polluted
+- also, it helps reducing the chances or errors to occur because of variables
+  with same name disturbing the logic and flow
+- **var** is known to create the problematic **variable shadowing**
+- let and const are **block scoped**
+
+### How template literals improve Strings
+
+- template literals improve our code by allowing us to :
+  1. add variables inside strings ( string interpolation )
+  ```
+  let message = `Hi ${username}, how are you?`;
+  ```
+  2. use quotes inside strings
+  ```
+  `He said, "I am a string."`;
+  ```
+  3. write multi-line strings
+  ```
+  const threeLines = `This is a string 
+  that spans across 
+  three lines.
+`;
+  ```
+  
+### How variables should be named
+
+ - variable identifiers should be self-descriptive and shouldn't
+   require comments for others to know what they hold
+ - variables are case-sensitive and should be written in camelCase
+   ```
+   let fullName = `${firstName} ${lastName}`;
+   ```
+   
+ - variables which hold booleans are usually prefixed with **is** or **has**
+   ```
+   let isModalVisible = true;
+   ```
+   
+- variables which should not be changed ( including by other devs ) should
+  be named in ALL_CAPS
+  ```
+  const COLOR_RED = '#f00';
+  ```
