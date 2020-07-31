@@ -81,7 +81,7 @@
   const threeLines = `This is a string 
   that spans across 
   three lines.
-`;
+  `;
   ```
   
 ### How variables should be named
@@ -99,7 +99,7 @@
    ```
    
 - variables which should not be changed ( including by other devs ) should
-  be named in ALL_CAPS
+  be named in ALL CAPS
   ```
   const COLOR_RED = '#f00';
   ```
