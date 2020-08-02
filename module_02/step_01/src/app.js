@@ -218,16 +218,53 @@
 // console.log(userName);
 
 // 2. evalute multiple conditions with && ( AND operator ) -> return the falsy value
-const response = 'yann';
-const isEmailVerified = true;
+// const response = 'yann';
+// const isEmailVerified = true;
 
 // const userName = response && isEmailVerified || 'guest';
 // one value being falsy, returns fallback. take care of the order of operation with && !
 // be careful of operator precedence : the order in which the operation are performed
 // && as higher order precedence over || for instance. we can use () to overwrite
 // operator precedence :
-const userName = isEmailVerified && (response || 'guest');
+// const userName = isEmailVerified && (response || 'guest');
 // that's because () have the highest order in JS
 // so if we want one expression to be evaluated first, we wrap it into ()
 // const userName = isEmailVerified && response || 'guest';
 // console.log(userName);
+// ---
+/* Challenge 1: Let's say you're building Reddit. Only users that are either moderators or have reached a certain karma threshold are allowed to upvote. */
+
+// const karma = 143;
+// const isModerator = true;
+
+// first use a ternary to set hasEnoughKarma to true if karma is above 100. If not, set it to false
+// let hasEnoughKarma;
+
+//  set the value of canUpvote with short-circuiting (using hasEnoughKarma and isModerator)
+// let canUpvote;
+
+// console.log("canUpvote:", canUpvote);
+
+// ---
+const karma = 143;
+const isModerator = true;
+const hasEnoughKarma = karma > 100 ? true : false;
+const canUpvote = hasEnoughKarma || isModerator;
+// console.log("canUpvote:", canUpvote);
+
+// ---
+/* Challenge 2: Let's say that only moderators who have enough karma are allowed to delete posts.  How would you set the canDelete variable */
+
+// set canDelete to true if both hasEnoughKarma and isModerator is true
+const canDelete = hasEnoughKarma && isModerator;
+
+// console.log("canDelete:", canDelete);
+
+// ---
+// Challenge 3: what is the value of user? What if you switch the hasValidEmail variable to false? What if the response is empty?
+
+const response = "";
+const hasValidEmail = true;
+const user = hasValidEmail && (response || "guest");
+// console.log("user: ", user);
+// ---
