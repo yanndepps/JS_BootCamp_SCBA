@@ -1,6 +1,15 @@
-## Notes
+# Notes
+- [Notes](#notes)
+  - [variables & strings](#variables--strings)
+  - [strict mode](#strict-mode)
+  - [use let & const](#use-let--const)
+  - [const](#const)
+  - [why block scoping matters](#why-block-scoping-matters)
+  - [how template literals improve strings](#how-template-literals-improve-strings)
+  - [how variables should be named](#how-variables-should-be-named)
 
-### Variables & Strings
+
+## variables & strings
 
 - variables are like boxes, places to store data
   ```
@@ -12,7 +21,7 @@
 - names must not use reserved words such as **var**
 - camel-cased
 
-### Better code with strict mode
+## strict mode
 
 1. sloppy mode : default in scripts
 2. strict mode : throws more errors, prevents some pitfalls
@@ -31,7 +40,7 @@
   of the file 
   ( access a variable before it has been created )
   
-### Use let & const over var 
+## use let & const
 
 - with the release of ES6, two new ways to declare variables were
   introduced, namely **let** and **const** 
@@ -43,7 +52,7 @@
   which can not be reassigned
 - temporal dead zone : space between declaration and accessibilty
 
-### const
+## const
 
 - **const** has restrictions which make the code more readable :
   1. must be initialized with a value 
@@ -54,7 +63,7 @@
 - as we know that **const** doesn't allow the variable to be reassigned,
   we can be sure of its value and usage throughout the entire code
   
-### why block scoping matters
+## why block scoping matters
 
 - as we know that **block** in JS can be defined by a set of opening and
   closing curly brackets
@@ -65,7 +74,7 @@
 - **var** is known to create the problematic **variable shadowing**
 - let and const are **block scoped**
 
-### How template literals improve Strings
+## how template literals improve strings
 
 - template literals improve our code by allowing us to :
   1. add variables inside strings ( string interpolation )
@@ -84,7 +93,7 @@
   `;
   ```
   
-### How variables should be named
+## how variables should be named
 
  - variable identifiers should be self-descriptive and shouldn't
    require comments for others to know what they hold

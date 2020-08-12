@@ -1,8 +1,13 @@
-## Notes
+# Notes
+## Types & Conditionals
+- [Notes](#notes)
+  - [Types & Conditionals](#types--conditionals)
+    - [conditionnaly run JS code](#conditionnaly-run-js-code)
+    - [types and how they can be changed](#types-and-how-they-can-be-changed)
+    - [shorten conditionals with ternaries](#shorten-conditionals-with-ternaries)
+    - [even shorter conditionals with short-circuiting](#even-shorter-conditionals-with-short-circuiting)
 
-### Types & Conditionals
-
-#### Conditionnaly run JS code
+### conditionnaly run JS code
 
 - applications need the ability to do things based on different conditions
 - there are two ways of modifying flow control to achieve this
@@ -37,7 +42,7 @@
   - N/B : in switch statements, if none of the cases match, the default case runs
 
 
-### Types and how they can be changed
+### types and how they can be changed
 
 - there are two ways to convert data from one type to another in JS :
   1. **explicit** type conversion : where we tell JS that we want to change 
@@ -60,7 +65,7 @@
   3. convert to real Boolean values where needed
 
 
-### Shorten conditionals with ternaries
+### shorten conditionals with ternaries
 
 - if/else statements can be repetitive
 - in order to conditionnaly assign a variable without repetition,
@@ -76,7 +81,7 @@
 - the ternary operator is an expression not a statement
 
 
-### Even Shorter Conditionals with Short-Circuiting
+### even shorter conditionals with short-circuiting
 - we can make conditionals shorter with **logical operators** such
   as || ( or ) or && ( and ) 
 - this is known as **short-circuiting**
@@ -92,4 +97,3 @@
   ```
   const username = isEmailVerified && (response || "guest");
   ```
-
