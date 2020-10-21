@@ -102,3 +102,13 @@ function getData(baseURL) {
 ```
 
 -   [code](step_05/src/app.js)
+
+
+## how function should be named
+
+-   name functions after a verb which clearly conveys what they do.
+-   omit articles (a, an).
+-   make sure the name matches the number of items involved ( createTodo vs createTodos ).
+-   if you have similar actions throughout the application, use the same verb to describe them.
+
+-   [code](step_06/src/app.js)
