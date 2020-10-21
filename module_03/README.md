@@ -82,3 +82,23 @@ const capitalize = name => `${name.charAt(0).toUpperCase()}${name.slice(1)}`;
 ```
 
 -   [code](step_04/src/app.js)
+
+
+## partial application for single-responsibility functions
+
+-   rather than having one function which does multiple actions, *partial application* allows us to split functions into those which have single, clearly-defined responsibilities.
+-   this improves code readability and allows us to separate our concerns.
+
+```js
+function getData(baseURL) {
+    return function(route) {
+        return function(callback) {
+            fetch(`${baseURL}${route}`)
+                .then(response => response.json())
+                .then(data => callback(data));
+        }
+    }
+}
+```
+
+-   [code](step_05/src/app.js)
