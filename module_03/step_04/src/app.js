@@ -18,4 +18,17 @@ const greetUser = (name, callback) => callback(capitalize(name));
 
 const result = greetUser(username, name => `hi there, ${name} !`);
 
-console.log(result);
+// console.log(result);
+
+// Challenge : rewrite the counting down closure in arrow function form
+
+const countdown = (start, step) => {
+  let startNum = start;
+  return () => startNum -= step;
+
+}
+
+const countingDown = countdown(12,4);
+// console.log(countingDown());
+// console.log(countingDown());
+// console.log(countingDown());
