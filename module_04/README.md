@@ -35,3 +35,8 @@
     ```
 
 -   [code](step_01/src/app.js)
+
+
+## understand primitive vs object types
+
+-   [code](step_02/src/app.js)
