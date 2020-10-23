@@ -116,3 +116,20 @@
     ```
 
 -   [code](step_03/src/app.js)
+
+
+## merge objects with object spread
+
+-   `Object.assign()` allows us to merge properties from two or more objects into a new object:
+    
+    ```js
+    Object.assign({}, user, newUser);
+    ```
+
+-   however, this is not very intuitive or readable. a cleaner way of doing this is to use the `spread` operator ( &#x2026; ) :
+    
+    ```js
+    const createdUser = { ...user, ...newUser, verified: false };
+    ```
+
+-   [code](step_04/src/app.js)
