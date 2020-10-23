@@ -133,3 +133,23 @@
     ```
 
 -   [code](step_04/src/app.js)
+
+
+## how maps can do what objects can&rsquo;t
+
+-   since ES6 we have a new data type called a map.
+    
+    ```js
+    const map1 = new Map([
+        [ 1, 1 ],
+        [ true, true ]
+    ]);
+    ```
+
+-   maps allow us to:
+    1.  use non-strings as object&rsquo; keys
+    2.  use objects as keys
+    3.  easily iterate over data
+    4.  easily get the length of data
+
+-   [code](step_05/src/app.js)
