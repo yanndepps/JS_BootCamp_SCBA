@@ -99,3 +99,20 @@
     ```
 
 -   [code](step_02/src/app.js)
+
+
+## easy property access with destructuring
+
+-   object destructuring allows us to pull properties from an object and make them into variables:
+    
+    ```js
+    const { username, email } = user;
+    ```
+
+-   we destructure nested object as follow:
+    
+    ```js
+    const { name, details: { title } } = user;
+    ```
+
+-   [code](step_03/src/app.js)
