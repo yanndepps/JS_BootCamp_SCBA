@@ -20,6 +20,26 @@
 
 ## check if elements exist in array
 
+-   introducing some useful array methods: `.includes()` tells us whether a certain element exists in an array:
+    
+    ```js
+    console.log(temperatures.includes(50));
+    ```
+
+-   `.some()` checks whether one or more elements in an array meets a given condition:
+    
+    ```js
+    const result = temperatures.some(temperature => temperature.isRecordTemp);
+    ```
+
+-   `.every()` tells us whether a condition is true for all the elements in an array:
+    
+    ```js
+    const result = temperatures.every(temperature => !temperature.isRecordTemp);
+    ```
+
+-   [code](step_02/src/app.js)
+
 
 ## perform action on all elements
 
