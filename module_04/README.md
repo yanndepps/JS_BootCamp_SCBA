@@ -153,3 +153,18 @@
     4.  easily get the length of data
 
 -   [code](step_05/src/app.js)
+
+
+## improve methods with arrow functions
+
+-   arrow functions allow us to use a function inside another function.
+    
+    ```js
+    askToFriend() {
+        setTimeout(() => {
+            console.log(`would u like to friend ${this.username}?`);
+        }, 2000);
+    }
+    ```
+
+-   [code](step_06/src/app.js)
