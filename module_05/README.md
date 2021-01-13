@@ -43,6 +43,18 @@
 
 ## perform action on all elements
 
+-   `.map` allows us to transform each element of an array and create a new array:
+
+    ```js
+    const newTemps = temperatures.map(temperature =>
+            temperature.degrees > 70 ? { ...temperature, isHigh: true } : temperature
+        );
+    ```
+
+-   `.forEach()` works in a similar way but does not create a new array, and instead applies a given action to an existing array.
+-    Methods can be chained
+-   [code](step_03/src/app.js)
+
 
 ## get subsets of arrays
 
