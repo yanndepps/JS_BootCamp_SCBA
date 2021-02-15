@@ -78,4 +78,15 @@
 
 ## transform arrays with reduce
 
+- Unlike `.map()` which always returns an array, `.reduce()` can transform an array into any data type.
+  This is useful for tasks such as creating totals :
+
+  ```js
+  const total = menuItems.reduce((accumulator, menuItem) => {
+    return accumulator + menuItem.price;
+  }, 0);
+  ```
+
+- [code](step_05/src/app.js)
+
 ## mold arrays with spread operator
