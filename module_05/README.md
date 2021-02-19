@@ -97,6 +97,10 @@
 
 ## understand the power of .reduce()
 
+- Virtually every array method can be recreated with `.reduc()`.
+- This is because the majority of these methods are **productions**, meaning that they
+  take an array and transform it into smth else.
+
 - [code](step_07/src/app.js)
 
 ## mold arrays with spread operator
