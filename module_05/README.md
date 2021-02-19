@@ -89,4 +89,14 @@
 
 - [code](step_05/src/app.js)
 
+## challenge : transform an array with reduce
+
+- Transform an array using `.reduce()`
+
+- [code](step_06/src/app.js)
+
+## understand the power of .reduce()
+
+- [code](step_07/src/app.js)
+
 ## mold arrays with spread operator
